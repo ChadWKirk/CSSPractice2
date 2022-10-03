@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 60px 150px 1fr;
+}
+
+.navBar {
+  background-color: darkblue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.searchBar {
+  width: 40%;
+  padding: 0.3rem;
+  margin-left: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar input {
+  width: 80%;
+  padding: 0.1rem;
+  padding-left: 0.2rem;
+  font-size: 1.25rem;
+}
+
+.searchBar button {
+  padding: 0.22rem;
+  font-size: 1rem;
+}
+
+.navButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navButtons button {
+  margin: 1rem;
+  padding: 0.22rem;
+  font-size: 1rem;
+}
+
+.emptySpace {
+  background-color: #e7e7e7;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 75% 1fr;
+  grid-template-rows: 10% 1fr;
+}
+
+.sortBy {
+  background-color: steelblue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.sortBy button {
+  margin: 0.5rem;
+  padding: 0.2rem;
+}
+
+.dropDownSortBy {
+  position: relative;
+}
+
+.dropDownSortBy ul {
+  position: absolute;
+  /* width: 100%; */
+  top: 35px;
+  left: 9px;
+  list-style: none;
+  z-index: 100;
+}
+
+.dropDownSortBy ul li {
+  background-color: #e7e7e7;
+  font-size: 1rem;
+  outline: 1px solid lightgray;
+  padding: 0.2rem;
+  width: 200%;
+}
+
+.gallery {
+  outline: 2px solid lightblue;
+  background-color: steelblue;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-top: 20px;
+  overflow: scroll;
+}
+
+.image {
+  width: 200px;
+  height: 225px;
+  outline: 2px solid lightblue;
+  background-color: lightblue;
+  border-radius: 10px;
+  position: relative;
+}
+
+.image input {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.image label {
+}
+
+.image img {
+  width: 200px;
+  height: 180px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.image p {
+  width: 100%;
+  margin-top: 0;
+  background-color: lightblue;
+  font-weight: bold;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.formTitle {
+  background-color: #e7e7e7;
+  outline: 2px solid lightblue;
+  padding: 1rem;
+  padding-left: 2rem;
+  font-weight: bold;
+}
+
+.formContents {
+  background-color: #e7e7e7;
+  outline: 2px solid lightblue;
+  padding: 1rem;
+}
+
+.formInput {
+  padding: 1rem;
+}
+
+.formBtn {
+  padding: 0.3rem;
+  margin: 0.3rem;
+  margin-left: 1rem;
+}
